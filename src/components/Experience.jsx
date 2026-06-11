@@ -10,10 +10,10 @@ export default function Experience({ mode }) {
   
   // State to track expanded experience cards (all open by default)
   const [expandedStates, setExpandedStates] = useState({
-    0: true,
-    1: true,
-    2: true,
-    3: true
+    0: false,
+    1: false,
+    2: false,
+    3: false
   });
   // State for filtering by tech stack
   const [activeFilter, setActiveFilter] = useState(null);
@@ -358,7 +358,7 @@ export default function Experience({ mode }) {
                             }
                           }}
                         >
-                          {isExpanded ? 'Hide Details' : 'View Architecture & Impact'}
+                          {isExpanded ? 'Hide Details' : 'Details'}
                         </Button>
                       </Box>
                     </CardContent>
